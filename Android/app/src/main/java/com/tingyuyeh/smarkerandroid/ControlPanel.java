@@ -53,37 +53,37 @@ public class ControlPanel extends AppCompatActivity {
             }
         });
 
-        animation_view = findViewById(R.id.animation_view);
-        animation_view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                animation_view.playAnimation();
-            }
-        });
-
-
-        animation_view.addAnimatorListener(new Animator.AnimatorListener() {
-            @Override
-            public void onAnimationStart(Animator animation) {
-                Log.e("Animation:","start");
-            }
-
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                Log.e("Animation:","end");
-                animation_view.setProgress(0);
-            }
-
-            @Override
-            public void onAnimationCancel(Animator animation) {
-                Log.e("Animation:","cancel");
-            }
-
-            @Override
-            public void onAnimationRepeat(Animator animation) {
-                Log.e("Animation:","repeat");
-            }
-        });
+//        animation_view = findViewById(R.id.animation_view);
+//        animation_view.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                animation_view.playAnimation();
+//            }
+//        });
+//
+//
+//        animation_view.addAnimatorListener(new Animator.AnimatorListener() {
+//            @Override
+//            public void onAnimationStart(Animator animation) {
+//                Log.e("Animation:","start");
+//            }
+//
+//            @Override
+//            public void onAnimationEnd(Animator animation) {
+//                Log.e("Animation:","end");
+//                animation_view.setProgress(0);
+//            }
+//
+//            @Override
+//            public void onAnimationCancel(Animator animation) {
+//                Log.e("Animation:","cancel");
+//            }
+//
+//            @Override
+//            public void onAnimationRepeat(Animator animation) {
+//                Log.e("Animation:","repeat");
+//            }
+//        });
     }
 
     class RetrieveFeedTask extends AsyncTask<String, Void, HttpResponse> {
